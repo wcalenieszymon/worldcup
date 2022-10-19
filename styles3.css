@@ -1,0 +1,126 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+#container{
+    width: 1500px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    width: 100%;
+    height: 9%;
+    background-color: aquamarine;
+    float: left;  
+}
+.stadiums,.teams,.history{
+    float: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+#topbar{
+    width: 100%;
+    height: 6%;
+    background-color: yellow;
+    float: left;  
+}
+.slider{
+    float: left;
+    background-color: blue;
+    height: 20%;
+    width: 30%;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+.dots{
+    float: left;
+    height: 20%;
+    width: 10%;
+    background-color: cornflowerblue;
+}
+.clubNames{ 
+    float: left;
+    background-color: red;
+    height: 20%;
+    width: 60%;
+}
+.contents{
+    float: left;
+    background-color: lightblue;
+    width: 100%;
+    height: 80%;
+}
+.groups{
+    float: left;
+    background-color: bisque;
+    width: 80%;
+    height: 85%;
+    display: none;
+}
+.nig,.nig1{
+
+    float: left;
+    background-color: #fff;
+    width: 10%;
+    height: 85%;
+    text-align: center;
+}
+.nig p{
+    cursor:pointer;
+}
+.nig p{
+    margin-top:50px ;
+    margin-bottom: 50px;
+    border: 1px solid black;
+}
+.dot{ /*kropki w które jak klikasz dzieje sie magia kina*/
+    width: 20%;
+    height: 20%;
+    display: flex;
+    background-color: black;
+    border-radius: 100%;
+    cursor: pointer;
+
+    
+}
+.dots img{
+    width: 60px;
+    height: 30px;
+    padding: 3px;
+}
+.dot:hover{
+    background-color: aqua;
+    transition: 0.5s;
+}
+hr{
+    margin: 0;
+    height: 5%;
+    background-color: black;
+}
+.lll{
+    margin-left: 100%;
+    width: 100%;
+}
+
+
+.clubname.active{
+    height: 100%;
+}
+
+
+
+
+
+
+.groups.active,.slide.active,.clubName.active,.content.active,.nig.active{
+    display:block;
+}
+.slide,.groups,.clubName,.content,.nig{
+    display: none;
+}

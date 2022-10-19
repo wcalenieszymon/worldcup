@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles3.css">
+    <script src="script3.js"></script>
+</head>
+<body>
+    
+    <div id="container">
+        <header></header>
+        <div id="topbar">
+            <div class="stadiums">Stadiony</div>
+            <div class="teams">Zespoły</div>
+            <div class="history">Historia mistrzostw Świata</div>
+            
+        </div>
+        <div  id='nigGroups' class="nig active">
+            <p onclick="ShowGroupA()" class="nigGroup">grupa A</p>
+            <p onclick="ShowGroupB()" class="nigGroup">grupa B</p>
+            <p onclick="ShowGroupC()" class="nigGroup">grupa C</p>
+            <p onclick="ShowGroupD()" class="nigGroup">grupa D</p>
+            <p onclick="ShowGroupE()" class="nigGroup">grupa E</p>
+            <p onclick="ShowGroupF()" class="nigGroup">grupa F</p>
+            <p onclick="ShowGroupG()" class="nigGroup">grupa G</p>
+            <p onclick="ShowGroupH()" class="nigGroup">grupa H</p> 
+        </div>
+        <div  id='stadiums'class="nig ">
+            <p onclick="ShowGroupA()" class="nigGroup">grupa A</p>
+            <p onclick="ShowGroupB()" class="nigGroup">grupa B</p>
+            <p onclick="ShowGroupC()" class="nigGroup">grupa C</p>
+            <p onclick="ShowGroupD()" class="nigGroup">grupa D</p>
+            <p onclick="ShowGroupE()" class="nigGroup">grupa E</p>
+            <p onclick="ShowGroupF()" class="nigGroup">grupa F</p>
+            <p onclick="ShowGroupG()" class="nigGroup">grupa G</p>
+            <p onclick="ShowGroupH()" class="nigGroup">grupa H</p> 
+        </div>
+        
+        <div id="groupA" class="groups active">
+            <div class="dots">
+                <div id="dotA1" class="dot" onclick="showSlideA1(),showClubNameA1(),showClubContentA1(),QuatarColors()"><div class="lll"><img src="groupA\quatar.png">     </div></div> 
+                <hr>
+                <div id="dotA2" class="dot" onclick="showSlideA2(),showClubNameA2(),showClubContentA2()"><div class="lll"><img src="groupA\ecuador.png">    </div></div> 
+                <hr> 
+                <div id="dotA3" class="dot" onclick="showSlideA3(),showClubNameA3(),showClubContentA3()"><div class="lll"><img src="groupA\senegal.png">    </div></div>
+                <hr>
+                <div id="dotA4" class="dot" onclick="showSlideA4(),showClubNameA4(),showClubContentA4()"><div class="lll"><img src="groupA\netherlands.png"></div></div>
+            </div> <div class="slider">
+                <img src="groupA\quatar.png"        class="slide active" id="slideA1" >
+                <img src="groupA\ecuador.png"       class="slide"        id="slideA2"> 
+                <img src="groupA\senegal.png"       class="slide"        id="slideA3">
+                <img src="groupA\netherlands.png"   class="slide"        id="slideA4">
+            </div>
+           <div class="clubNames">
+                <div id="clubNameA1"    class="clubName active">Katar   </div>
+                <div id="clubNameA2"    class="clubName "      >Ekwador </div>
+                <div id="clubNameA3"    class="clubName"       >Senegal </div>
+                <div id="clubNameA4"    class="clubName"       >Holandia</div>
+           </div>
+            <div class="contents">
+                <div id='contentA1' class="content active">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentA2'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>         
+                <div id='contentA3'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentA4'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="groupB" class="groups">
+            <div class="dots">
+                <div id="dotB1" class="dot" onclick="showSlideB1(),showClubNameB1(),showClubContentB1()"><div class="lll"><img src="groupB\england.png"> </div></div> 
+                <hr>
+                <div id="dotB2" class="dot" onclick="showSlideB2(),showClubNameB2(),showClubContentB2()"><div class="lll"><img src="groupB\iran.png"   > </div></div> 
+                <hr> 
+                <div id="dotB3" class="dot" onclick="showSlideB3(),showClubNameB3(),showClubContentB3()"><div class="lll"><img src="groupB\usa.png"    > </div></div>
+                <hr>
+                <div id="dotB4" class="dot" onclick="showSlideB4(),showClubNameB4(),showClubContentB4()"><div class="lll"><img src="groupB/wales.png"  > </div></div>
+            </div> <div class="slider">
+                <img src="groupB\england.png"  class="slide active" id="slideB1" >
+                <img src="groupB\iran.png"     class="slide"        id="slideB2"> 
+                <img src="groupB\usa.png"      class="slide"        id="slideB3">
+                <img src="groupB\wales.png"    class="slide"        id="slideB4">
+            </div>
+           <div class="clubNames">
+                <div id="clubNameB1"    class="clubName active"> Anglia</div>
+                <div id="clubNameB2"    class="clubName "      > Iran  </div>
+                <div id="clubNameB3"    class="clubName"       > USA   </div>
+                <div id="clubNameB4"    class="clubName"       > Walia </div>
+           </div>
+            <div class="contents">
+                <div id='contentB1'  class="content active">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentB2'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>         
+                <div id='contentB3'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentB4'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="groupC" class="groups">
+            <div class="dots">
+                <div id="dotC1" class="dot" onclick="showSlideC1(),showClubNameC1(),showClubContentC1()"><div class="lll"><img src="groupC/argentina.png"> </div></div> 
+                <hr>
+                <div id="dotC2" class="dot" onclick="showSlideC2(),showClubNameC2(),showClubContentC2()"><div class="lll"><img src="groupC/arabia.png"   > </div></div> 
+                <hr> 
+                <div id="dotC3" class="dot" onclick="showSlideC3(),showClubNameC3(),showClubContentC3()"><div class="lll"><img src="groupC/mexico.png"   > </div></div>
+                <hr>
+                <div id="dotC4" class="dot" onclick="showSlideC4(),showClubNameC4(),showClubContentC4()"><div class="lll"><img src="groupC/poland.png"   > </div></div>
+            </div> <div class="slider">
+                <img src="groupC/argentina.png"   class="slide active" id="slideC1">
+                <img src="groupC/arabia.png"      class="slide"        id="slideC2"> 
+                <img src="groupC/mexico.png"      class="slide"        id="slideC3">
+                <img src="groupC/poland.png"      class="slide"        id="slideC4">
+            </div>
+           <div class="clubNames">
+                <div id="clubNameC1"   class="clubName active">Argentyna       </div>
+                <div id="clubNameC2"   class="clubName "      >Arabia Saudyjska</div>
+                <div id="clubNameC3"   class="clubName"       >Meksyk          </div>
+                <div id="clubNameC4"   class="clubName"       >Polska          </div>
+           </div>
+            <div class="contents">
+                <div id='contentC1'  class="content active">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentC2'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>         
+                <div id='contentC3'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentC4'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="groupD" class="groups">
+            <div class="dots">
+                <div id="dotD1" class="dot" onclick="showSlideD1(),showClubNameD1(),showClubContentD1()"><div class="lll"><img src="groupD/france.png"   > </div></div> 
+                <hr>
+                <div id="dotD2" class="dot" onclick="showSlideD2(),showClubNameD2(),showClubContentD2()"><div class="lll"><img src="groupD/australia.png"> </div></div> 
+                <hr> 
+                <div id="dotD3" class="dot" onclick="showSlideD3(),showClubNameD3(),showClubContentD3()"><div class="lll"><img src="groupD/denmark.png"  > </div></div>
+                <hr>
+                <div id="dotD4" class="dot" onclick="showSlideD4(),showClubNameD4(),showClubContentD4()"><div class="lll"><img src="groupD/tunisia.png"  > </div></div>
+            </div> <div class="slider">
+                <img src="groupD/france.png"     class="slide active" id="slideD1" >
+                <img src="groupD/australia.png"  class="slide"        id="slideD2"> 
+                <img src="groupD/denmark.png"    class="slide"        id="slideD3">
+                <img src="groupD/tunisia.png"    class="slide"        id="slideD4">
+            </div>
+           <div class="clubNames">
+                <div id="clubNameD1"   class="clubName active">Francja   </div>
+                <div id="clubNameD2"   class="clubName "      >Australia </div>
+                <div id="clubNameD3"   class="clubName"       >Dania     </div>
+                <div id="clubNameD4"   class="clubName"       >Tunezja   </div>
+           </div>
+            <div class="contents">
+                <div id='contentD1'  class="content active">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentD2'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>         
+                <div id='contentD3'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentD4'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="groupE" class="groups">
+            <div class="dots">
+                <div id="dotE1" class="dot" onclick="showSlideE1(),showClubNameE1(),showClubContentE1()"><div class="lll"><img src="groupE/spain.png"    > </div></div> 
+                <hr>
+                <div id="dotE2" class="dot" onclick="showSlideE2(),showClubNameE2(),showClubContentE2()"><div class="lll"><img src="groupE/costarica.png"> </div></div> 
+                <hr> 
+                <div id="dotE3" class="dot" onclick="showSlideE3(),showClubNameE3(),showClubContentE3()"><div class="lll"><img src="groupE/germany.png"  > </div></div>
+                <hr>
+                <div id="dotE4" class="dot" onclick="showSlideE4(),showClubNameE4(),showClubContentE4()"><div class="lll"><img src="groupE/japan.png"    > </div></div>
+            </div> <div class="slider">
+                <img src="groupE/spain.png"      class="slide active" id="slideE1" >
+                <img src="groupE/costarica.png"  class="slide"        id="slideE2"> 
+                <img src="groupE/germany.png"    class="slide"        id="slideE3">
+                <img src="groupE/japan.png"      class="slide"        id="slideE4">
+            </div>
+           <div class="clubNames">
+                <div id="clubNameE1" class="clubName active">Hiszpania </div>
+                <div id="clubNameE2" class="clubName "      >Kostaryka </div>
+                <div id="clubNameE3" class="clubName"       >Niemcy    </div>
+                <div id="clubNameE4" class="clubName"       >Japonia   </div>
+           </div>
+            <div class="contents">
+                <div id='contentE1'  class="content active">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentE2'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>         
+                <div id='contentE3'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentE4'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="groupF" class="groups">
+            <div class="dots">
+                <div id="dotF1" class="dot" onclick="showSlideF1(),showClubNameF1(),showClubContentF1()"><div class="lll"><img src="groupF/belgium.png"> </div></div> 
+                <hr>
+                <div id="dotF2" class="dot" onclick="showSlideF2(),showClubNameF2(),showClubContentF2()"><div class="lll"><img src="groupF/canada.png">  </div></div> 
+                <hr> 
+                <div id="dotF3" class="dot" onclick="showSlideF3(),showClubNameF3(),showClubContentF3()"><div class="lll"><img src="groupF/morroco.png"> </div></div>
+                <hr>
+                <div id="dotF4" class="dot" onclick="showSlideF4(),showClubNameF4(),showClubContentF4()"><div class="lll"><img src="groupF/croatia.png"> </div></div>
+            </div> <div class="slider">
+                <img src="groupF/belgium.png" class="slide active" id="slideF1" >
+                <img src="groupF/canada.png"  class="slide"        id="slideF2"> 
+                <img src="groupF/morroco.png" class="slide"        id="slideF3">
+                <img src="groupF/croatia.png" class="slide"        id="slideF4">
+            </div>
+           <div class="clubNames">
+                <div id="clubNameF1" class="clubName active">Belgia   </div>
+                <div id="clubNameF2" class="clubName " >     Kanada   </div>
+                <div id="clubNameF3" class="clubName" >      Maroko   </div>
+                <div id="clubNameF4" class="clubName" >      Chorwacja</div>
+           </div>
+            <div class="contents">
+                <div id='contentF1'  class="content active">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentF2'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>         
+                <div id='contentF3'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentF4'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="groupG" class="groups ">
+            <div class="dots">
+                <div id="dotG1" class="dot" onclick="showSlideG1(),showClubNameG1(),showClubContentG1()"><div class="lll"><img src="groupG/brazil.png"     > </div></div> 
+                <hr>
+                <div id="dotH2" class="dot" onclick="showSlideG2(),showClubNameG2(),showClubContentG2()"><div class="lll"><img src="groupG/serbia.png"     > </div></div> 
+                <hr> 
+                <div id="dotH3" class="dot" onclick="showSlideG3(),showClubNameG3(),showClubContentG3()"><div class="lll"><img src="groupG/switzerland.png"> </div></div>
+                <hr>
+                <div id="dotH4" class="dot" onclick="showSlideG4(),showClubNameG4(),showClubContentG4()"><div class="lll"><img src="groupG/cameroun.png"   > </div></div>
+            </div> <div class="slider">
+                <img src="groupG/brazil.png"       class="slide active" id="slideG1">
+                <img src="groupG/serbia.png"       class="slide"        id="slideG2"> 
+                <img src="groupG/switzerland.png"  class="slide"        id="slideG3">
+                <img src="groupG/cameroun.png"     class="slide"        id="slideG4">
+            </div>
+           <div class="clubNames">
+                <div id="clubNameG1"   class="clubName active">Brazylia    </div>
+                <div id="clubNameG2"   class="clubName "      >Serbia      </div>
+                <div id="clubNameG3"   class="clubName"       >Szwajcaria  </div>
+                <div id="clubNameG4"   class="clubName"       >Kamerun     </div>
+           </div>
+            <div class="contents">
+                <div id='contentG1'  class="content active">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentG2'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>         
+                <div id='contentG3'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentG4'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="groupH" class="groups ">
+            <div class="dots">
+                <div id="dotH1" class="dot" onclick="showSlideH1(),showClubNameH1(),showClubContentH1()"><div class="lll"><img src="groupH/portugal.png"> </div></div> 
+                <hr>
+                <div id="dotH2" class="dot" onclick="showSlideH2(),showClubNameH2(),showClubContentH2()"><div class="lll"><img src="groupH/ghana.png"   > </div></div> 
+                <hr> 
+                <div id="dotH3" class="dot" onclick="showSlideH3(),showClubNameH3(),showClubContentH3()"><div class="lll"><img src="groupH/uruguay.png" > </div></div>
+                <hr>
+                <div id="dotH4" class="dot" onclick="showSlideH4(),showClubNameH4(),showClubContentH4()"><div class="lll"><img src="groupH/korea.png"   > </div></div>
+            </div> <div class="slider">
+                <img src="groupH/portugal.png"   class="slide active" id="slideH1" >
+                <img src="groupH/ghana.png"      class="slide"        id="slideH2"> 
+                <img src="groupH/uruguay.png"    class="slide"        id="slideH3">
+                <img src="groupH/korea.png"      class="slide"        id="slideH4">
+            </div>
+           <div class="clubNames">
+                <div id="clubNameH1"      class="clubName active">Portugalia       </div>
+                <div id="clubNameH2"      class="clubName "      >Ghana            </div>
+                <div id="clubNameH3"      class="clubName"       >Urugwaj          </div>
+                <div id="clubNameH4"      class="clubName"       >Korea Południowa </div>
+           </div>
+            <div class="contents">
+                <div id='contentH1'  class="content active">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentH2'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>         
+                <div id='contentH3'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+                <div id='contentH4'  class="content">
+                    bramkarze:
+                    <br>
+                    obrońcy:
+                    <br>
+                    napastnicy:
+                    <br>
+                    Selekcjoner:
+                    <br>
+                    historia reprezentacji w mistrzostwach świata:
+                    <br>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="nig1">
+            123422222222
+        </div>
+           
+       
+        
+        
+        
+    </div>
+   
+   
+</body>
+</html>
